@@ -7,7 +7,7 @@ body {
   text-align: center;
   color: white;
   margin: 0;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 #start {
@@ -21,7 +21,7 @@ body {
 
 #top_bar {
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 80px;
   margin-top: 50px;
 }
@@ -49,7 +49,7 @@ a.button:hover {
 #quotation {
   grid-row: 2/4;
   font-family: 'Montserrat', sans-serif;
-  justify-self:center;
+  justify-self: center;
   align-self: center;
 }
 
@@ -71,11 +71,14 @@ a.button1 {
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
-  transition: all 0.2s;
+  transition: all 2s;
   border-radius: 30px;
+  opacity: 0.5;
+  transition: opacity 2s ease-out;
 }
 
 a.button1:hover {
+  opacity: 1;
   background: linear-gradient(to right, #FF8A00, #FF5E2B);
   color: white;
 }
@@ -83,10 +86,10 @@ a.button1:hover {
 /* end of start */
 
 #services {
-  height: 140%;
+  height: 120%;
   background: #E0E0E0;
   display: grid;
-  grid-template-rows: 20% 10% 50% 20%;
+  grid-template-rows: 10% 10% 60% 20%;
   color: #465161;
 }
 
@@ -127,6 +130,7 @@ a.button1:hover {
 }
 
 .desc {
+  font-size: 14px;
   padding: 15px;
   text-align: left;
 }
@@ -135,19 +139,12 @@ a.button1:hover {
   max-width: 960px;
   justify-self: center;
   align-self: center;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 50px;
 }
 
 .down_description {
   max-width: 960px;
   justify-self: center;
-  align-self: end;
-  margin-bottom: 20px;
-  margin-left: 2em;
-  margin-right: 2em;
-  /* margin-top: 70px; */
+  align-self: center;
 }
 
 /* end of services */
@@ -161,9 +158,9 @@ a.button1:hover {
 }
 
 #round_photo {
-  align-self: start;
+  align-self: center;
   justify-self: center;
-  max-width: 18%;
+  max-width: 13%;
 }
 
 #signature {
@@ -235,10 +232,9 @@ a:hover {
   background: white;
   color: #465161;
   display: grid;
-
 }
 
-#gallery_photo_section{
+#gallery_photo_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
@@ -248,38 +244,36 @@ a:hover {
 }
 
 .image_link {
-  filter:         url(~"data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    -webkit-filter: grayscale(100%);
-    -moz-filter:    grayscale(100%);
-    -ms-filter:     grayscale(100%);
-    -o-filter:      grayscale(100%);
-    filter: gray;
-    transition: filter 0.5s;
- }
+  filter: url(~"data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: gray;
+  transition: filter 0.5s;
+}
 
 .image_link:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
-  -moz-filter:    grayscale(0%);
-  -ms-filter:     grayscale(0%);
-  -o-filter:      grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
   cursor: pointer;
 }
 
-.gallery_photo{
+.gallery_photo {
   margin: 30px 30px 15px 15px;
   width: 10rem;
   border-radius: 25px;
 }
-
-
-
 
 /* end of gallery */
 
 #footer {
   background: #E0E0E0;
   color: #465161;
+  padding: 10px;
 }
 
 .scroll {
@@ -290,8 +284,10 @@ a:hover {
   position: fixed;
   right: 50px;
   bottom: 50px;
+  border-radius: 10px;
   display: none;
 }
+
 
 /* end of desktop */
 
@@ -322,7 +318,7 @@ a:hover {
     display: grid;
     font-family: 'Montserrat', sans-serif;
     align-self: center;
-    justify-self:center;
+    justify-self: center;
   }
   #quotation p {
     font-size: 20px;
@@ -408,7 +404,7 @@ a:hover {
   }
   #menu {
     position: absolute;
-    width: 300px;
+    width: 250%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
@@ -423,22 +419,19 @@ a:hover {
     padding: 10px 0;
     font-size: 22px;
   }
-
-  #menu li:hover{
+  #menu li:hover {
     color: #ff8a00;
   }
-
   #menuToggle input:checked~ul {
     transform: none;
   }
-
   .scroll {
     right: 25px;
     bottom: 25px;
-
+    width: 40px;
+    height: 40px;
+    background: url("res/up.png") round 0px 0px;
   }
-
-
   #services {
     height: auto;
     padding: 20px;
@@ -475,10 +468,7 @@ a:hover {
     width: 100%;
     height: auto;
   }
-  .desc {
-    padding: 15px;
-    text-align: left;
-  }
+
   .upper_description {
     margin-top: 50px;
     margin-bottom: 35px;
@@ -526,7 +516,6 @@ a:hover {
     margin-bottom: 30px;
   }
   /* end of me */
-
   #contact {
     height: 100%;
     background: #E0E0E0;
@@ -534,14 +523,12 @@ a:hover {
     grid-template-rows: 1fr 3fr 1fr;
     color: #465161;
   }
-
   #map {
     margin-top: 45px;
   }
   #adress {
-    display:inline-block;
+    display: inline-block;
   }
-
   #contact_data {
     text-align: left;
     padding: 25px;
@@ -561,4 +548,34 @@ a:hover {
     margin-right: 0px;
   }
   /* end on contact */
+  #gallery {
+    height: auto;
+    background: white;
+    color: #465161;
+    display: inline-block;
+  }
+  #gallery_photo_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 9);
+    max-width: 960px;
+    align-self: start;
+    justify-self: center;
+  }
+  .gallery_photo {
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .image_link {
+    filter: none;
+  }
+
+  .image_link:hover {
+    filter: none;
+    cursor: pointer;
+  }
+  /* end of gallery */
 }
