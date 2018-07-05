@@ -12,40 +12,58 @@
 	<meta name="keywords" content="'szkolenia naprawa opon, szkolenia serwis
 	ogumienia, doradztwo techniczne wulkanizacja, naprawa ogumienia szkolenia Pobiedziska">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Work+Sans&amp;subset=latin-ext" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src = "jquery.scrollTo.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
 
 	<script>
+		jQuery(function($) {
+			//zresetuj scrolla
+			$.scrollTo(0);
 
-	jQuery(function($)
-	{
-		//zresetuj scrolla
-		$.scrollTo(0);
+			$('#link1').click(function() {
+				$.scrollTo($('#services'), 1500);
+			});
+			$('#link2').click(function() {
+				$.scrollTo($('#me'), 1500);
+			});
+			$('#link3').click(function() {
+				$.scrollTo($('#contact'), 1500);
+			});
+			$('#link4').click(function() {
+				$.scrollTo($('#gallery'), 1500);
+			});
 
-		$('#link1').click(function() { $.scrollTo($('#services'), 1500); });
-		$('#link2').click(function() { $.scrollTo($('#me'), 1500); });
-		$('#link3').click(function() { $.scrollTo($('#contact'), 1500); });
-		$('#link4').click(function() { $.scrollTo($('#gallery'), 1500); });
+			$('#link5').click(function() {
+				$.scrollTo($('#services'), 1500);
+			});
+			$('#link6').click(function() {
+				$.scrollTo($('#me'), 1500);
+			});
+			$('#link7').click(function() {
+				$.scrollTo($('#contact'), 1500);
+			});
+			$('#link8').click(function() {
+				$.scrollTo($('#gallery'), 1500);
+			});
 
-		$('#link5').click(function() { $.scrollTo($('#services'), 1500); });
-		$('#link6').click(function() { $.scrollTo($('#me'), 1500); });
-		$('#link7').click(function() { $.scrollTo($('#contact'), 1500); });
-		$('#link8').click(function() { $.scrollTo($('#gallery'), 1500); });
+			$('#link9').click(function() {
+				$.scrollTo($('#services'), 1500);
+			});
+			$('#link10').click(function() {
+				$.scrollTo($('#start'), 1500);
+			});
+		});
 
-		$('#link9').click(function() { $.scrollTo($('#services'), 1500); });
-		$('#link10').click(function() { $.scrollTo($('#start'), 1500); });
-	}
-	);
-
-	$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scroll').fadeIn();
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 300) $('.scroll').fadeIn();
 			else $('.scroll').fadeOut();
-		}
-		);
-
+		});
 	</script>
+
+	<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+
 </head>
 
 <body>
@@ -60,16 +78,16 @@
 					<span></span>
 					<span></span>
 					<ul id="menu">
-						<a id = "link1" href="#">
+						<a id="link1" href="#">
 							<li>Zakres usług</li>
 						</a>
-						<a id = "link2" href="#">
+						<a id="link2" href="#">
 							<li>O mnie</li>
 						</a>
-						<a id = "link3"  href="#">
+						<a id="link3" href="#">
 							<li>Kontakt</li>
 						</a>
-						<a id = "link4" href="#">
+						<a id="link4" href="#">
 							<li>Galeria</li>
 						</a>
 						<a href="de.html" target="_blank">
@@ -79,17 +97,17 @@
 				</div>
 			</nav>
 			<div id="menu_text_title">Ryszard Marcinkowski Szkolenia</div>
-			<a id = "link5" href="#" class="button"></a>
-			<a id = "link6" href="#" class="button">O mnie</a>
-			<a id = "link7" href="#" class="button">Kontakt</a>
-			<a id = "link8" href="#" class="button">Galeria</a>
+			<a id="link5" href="#" class="button"></a>
+			<a id="link6" href="#" class="button">O mnie</a>
+			<a id="link7" href="#" class="button">Kontakt</a>
+			<a id="link8" href="#" class="button">Galeria</a>
 			<a href="#" class="button">PL|DE</a>
 		</div>
 		<div id="quotation">
 			<p>Naprawa opon nie musi być problemem - trzeba tylko wiedzieć jak to zrobić.</p>
 		</div>
-		<a id = "link9" href="#" class="button1">Oferta</a>
-		<a id ="link10" href="#" class="scroll"></a>
+		<a id="link9" href="#" class="button1">Oferta</a>
+		<a id="link10" href="#" class="scroll"></a>
 	</div>
 
 	<div id="services">
@@ -185,6 +203,27 @@
 
 	<div id="gallery">
 		<div class="paragraph_title">Galeria</div>
+		<div id=gallery_photo_section>
+
+			<a class="image_link" href="galerry/1.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min1.jpg" alt = "Reperowanie opony" /></a>
+
+			<a class="image_link" href="galerry/2.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min2.jpg" alt = "Warsztat oponiarski"/></a>
+
+			<a class="image_link" href="galerry/3.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min3.jpg" alt = "Trener i składowisko opon"/></a>
+
+			<a class="image_link" href="galerry/4.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min4.jpg" alt = "Szkolenie naprawiania opon"/></a>
+
+			<a class="image_link" href="galerry/5.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min5.jpg" alt = "Szkolenie naprawiania opon"/></a>
+
+			<a class="image_link" href="galerry/6.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min6.jpg" alt = "Szkolenie naprawiania opon"/></a>
+
+			<a class="image_link" href="galerry/7.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min7.jpg" alt = "Szkolenie naprawiania opon"/></a>
+
+			<a class="image_link" href="galerry/8.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min8.jpg" alt = "Zdjęcie z kursantami"/></a>
+
+			<a class="image_link" href="galerry/9.jpg" data-lightbox="set"><img class="gallery_photo" src="galerry/min9.jpg" alt = "Szkolenie naprawiania opon"/></a>
+
+		</div>
 	</div>
 
 	<div id="footer">Wszelkie prawa zastrzeżone</div>
