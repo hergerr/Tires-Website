@@ -242,6 +242,17 @@ a:hover {
   color: #465161;
 }
 
+.scroll {
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  background: url("res/up.png") no-repeat 0px 0px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+}
+
 /* end of desktop */
 
 @media only screen and (max-width: 1000px) {
@@ -380,6 +391,14 @@ a:hover {
   #menuToggle input:checked~ul {
     transform: none;
   }
+
+  .scroll {
+    right: 25px;
+    bottom: 25px;
+
+  }
+
+
   #services {
     height: auto;
     padding: 20px;
@@ -501,6 +520,5 @@ a:hover {
     text-align: left;
     margin-right: 0px;
   }
-
   /* end on contact */
 }
