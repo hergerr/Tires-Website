@@ -132,9 +132,8 @@ a.button1:hover {
 
 .desc {
   font-size: 14px;
-  padding: 15px;
+  padding:0px 25px 25px 25px;
   text-align: left;
-  margin-left: 30px;
 }
 
 
