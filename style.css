@@ -329,7 +329,7 @@ a:hover {
     align-self: center;
     justify-self: center;
   }
-  #quotation p {
+  #quotation h1 {
     font-size: 20px;
     margin: 10px;
   }
@@ -413,7 +413,7 @@ a:hover {
   }
   #menu {
     position: absolute;
-    width: 250%;
+    width: 150%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
@@ -425,8 +425,9 @@ a:hover {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   }
   #menu li {
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 22px;
+    text-align: left;
   }
   #menu li:hover {
     color: #ff8a00;
@@ -456,8 +457,12 @@ a:hover {
     justify-self: center;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+  }
+
+  .paragraph_title h2{
     font-size: 36px;
   }
+
   #photo_section {
     grid-row: 3;
     display: inline-block;
